@@ -196,7 +196,7 @@ def alltrails_spider():
           else:
             counter = math.ceil(float(reviewcount)/20)
            # driver= webdriver.PhantomJS()
-            driver = webdriver.PhantomJS(executable_path='/node_modules/phantomjs/lib/phantom/bin/phantomjs')
+            driver = webdriver.PhantomJS(executable_path='/app/node_modules/phantomjs/lib/phantom/bin/phantomjs')
             if driver:
              driver.get(url)
             else:
