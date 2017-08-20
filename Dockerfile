@@ -1,10 +1,10 @@
 FROM amazonlinux
 
+RUN mkdir /app
+RUN cd /app
 WORKDIR /app
 ADD AllTrailsNYUrls.out /app
 ADD dockertestNY.py /app
-
-RUN cd /app
 
 RUN sudo yum install python-pip 
 RUN sudo pip install beautifulsoup4
